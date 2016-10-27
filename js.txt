@@ -1,0 +1,5 @@
+
+if ( $http_host ~* "^(.*)\.jbxue\.com$") {   
+	set $domain $1;
+	rewrite ^(.*) http://www.jbxue.com/test/$domain/ break;
+}
